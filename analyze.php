@@ -15,7 +15,7 @@ $ipRequests = [];
 
 if (($handle = fopen($filePath, 'r')) !== FALSE) {
     $header = fgetcsv($handle);
-    
+
     while (($row = fgetcsv($handle)) !== FALSE) {
         $timestamp = strtotime($row[8]);
         if ($timestamp === false) {
@@ -49,6 +49,7 @@ if (($handle = fopen($filePath, 'r')) !== FALSE) {
     }
     fclose($handle);
 }
+
 
 $timeSeriesFile = fopen('request_timeseries.csv', 'w');
 fputcsv($timeSeriesFile, ['Timestamp', 'Request Count']);
