@@ -3,10 +3,10 @@
 
 ## Requirements
 
-- PHP 7.4+
+-  PHP 7.4+
 
 ## Installation
- no dependencies need to be installed.
+-  no dependencies need to be installed.
 
 
 ## Guide
